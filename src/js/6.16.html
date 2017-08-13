@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var arr = [1,2,3];
+	var it = arr[Symbol.iterator]();
+    function myGenerator () {
+    	yield "hello";
+    	yield "world";
+    	return "ending";
+    }
+    var it = myGenerator();
+    console.log(it.next());
+	</script>
+</body>
+</html>
